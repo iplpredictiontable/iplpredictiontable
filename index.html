@@ -16,11 +16,23 @@
     .logo {
       background-color: #19398a;
     }
+
+    .mobile-show {
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
+      .web-show {
+        display: none;
+      }
+      .mobile-show {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container mt-5">
+  <div class="container mt-3">
     <div class="text-center mb-4">
       <img class="logo" src="ipl-logo-new-old.png" alt="IPL Logo" style="width: 150px;">
     </div>
@@ -38,114 +50,146 @@
           <th scope="col">Net Run Rate</th>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          <td>
+              <span class="web-show">Rajasthan Royals</span>
+              <span class="mobile-show">RR</span>
+          </td>
+          <td>14</td>
+          <td>13</td>
+          <td>1</td>
+          <td>0</td>
+          <td>26</td>
+          <td>0.694</td>
+      </tr>
+  
+
       <tr>
-        <td>Rajasthan Royals</td>
-        <td>14</td>
-        <td>13</td>
-        <td>1</td>
-        <td>0</td>
-        <td>26</td>
-        <td>0.694</td>
-    </tr>
+          <td>
+              <span class="web-show">Sunrisers Hyderabad</span>
+              <span class="mobile-show">SRH</span>
+          </td>
+          <td>14</td>
+          <td>8</td>
+          <td>6</td>
+          <td>0</td>
+          <td>16</td>
+          <td>0.075</td>
+      </tr>
+  
 
+      <tr>
+          <td>
+              <span class="web-show">Kolkata Knight Riders</span>
+              <span class="mobile-show">KKR</span>
+          </td>
+          <td>14</td>
+          <td>7</td>
+          <td>7</td>
+          <td>0</td>
+          <td>14</td>
+          <td>1.096</td>
+      </tr>
+  
 
-    <tr>
-        <td>Sunrisers Hyderabad</td>
-        <td>14</td>
-        <td>8</td>
-        <td>6</td>
-        <td>0</td>
-        <td>16</td>
-        <td>0.075</td>
-    </tr>
+      <tr>
+          <td>
+              <span class="web-show">Lucknow Super Giants</span>
+              <span class="mobile-show">LSG</span>
+          </td>
+          <td>14</td>
+          <td>7</td>
+          <td>7</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0.094</td>
+      </tr>
+  
 
+      <tr>
+          <td>
+              <span class="web-show">Royal Challengers Bengaluru</span>
+              <span class="mobile-show">RCB</span>
+          </td>
+          <td>14</td>
+          <td>7</td>
+          <td>7</td>
+          <td>0</td>
+          <td>14</td>
+          <td>-0.415</td>
+      </tr>
+  
 
-    <tr>
-        <td>Kolkata Knight Riders</td>
-        <td>14</td>
-        <td>7</td>
-        <td>7</td>
-        <td>0</td>
-        <td>14</td>
-        <td>1.096</td>
-    </tr>
+      <tr>
+          <td>
+              <span class="web-show">Chennai Super Kings</span>
+              <span class="mobile-show">CSK</span>
+          </td>
+          <td>14</td>
+          <td>6</td>
+          <td>8</td>
+          <td>0</td>
+          <td>12</td>
+          <td>0.81</td>
+      </tr>
+  
 
-    <tr>
-      <td>Royal Challengers Bengaluru</td>
-      <td>14</td>
-      <td>7</td>
-      <td>7</td>
-      <td>0</td>
-      <td>14</td>
-      <td>0.1</td>
-    </tr>
+      <tr>
+          <td>
+              <span class="web-show">Mumbai Indians</span>
+              <span class="mobile-show">MI</span>
+          </td>
+          <td>14</td>
+          <td>6</td>
+          <td>8</td>
+          <td>0</td>
+          <td>12</td>
+          <td>-0.272</td>
+      </tr>
+  
 
-    <tr>
-        <td>Lucknow Super Giants</td>
-        <td>14</td>
-        <td>7</td>
-        <td>7</td>
-        <td>0</td>
-        <td>14</td>
-        <td>0.094</td>
-    </tr>
+      <tr>
+          <td>
+              <span class="web-show">Delhi Capitals</span>
+              <span class="mobile-show">DC</span>
+          </td>
+          <td>14</td>
+          <td>6</td>
+          <td>8</td>
+          <td>0</td>
+          <td>12</td>
+          <td>-0.442</td>
+      </tr>
+  
 
+      <tr>
+          <td>
+              <span class="web-show">Gujarat Titans</span>
+              <span class="mobile-show">GT</span>
+          </td>
+          <td>14</td>
+          <td>6</td>
+          <td>8</td>
+          <td>0</td>
+          <td>12</td>
+          <td>-1.113</td>
+      </tr>
+  
 
-
-    <tr>
-        <td>Chennai Super Kings</td>
-        <td>14</td>
-        <td>6</td>
-        <td>8</td>
-        <td>0</td>
-        <td>12</td>
-        <td>0.81</td>
-    </tr>
-
-
-    <tr>
-        <td>Mumbai Indians</td>
-        <td>14</td>
-        <td>6</td>
-        <td>8</td>
-        <td>0</td>
-        <td>12</td>
-        <td>-0.272</td>
-    </tr>
-
-
-    <tr>
-        <td>Delhi Capitals</td>
-        <td>14</td>
-        <td>6</td>
-        <td>8</td>
-        <td>0</td>
-        <td>12</td>
-        <td>-0.442</td>
-    </tr>
-
-
-    <tr>
-        <td>Gujarat Titans</td>
-        <td>14</td>
-        <td>6</td>
-        <td>8</td>
-        <td>0</td>
-        <td>12</td>
-        <td>-1.113</td>
-    </tr>
-
-
-    <tr>
-        <td>Punjab Kings</td>
-        <td>14</td>
-        <td>4</td>
-        <td>10</td>
-        <td>0</td>
-        <td>8</td>
-        <td>-0.187</td>
-    </tr>
-
+      <tr>
+          <td>
+              <span class="web-show">Punjab Kings</span>
+              <span class="mobile-show">PBKG</span>
+          </td>
+          <td>14</td>
+          <td>4</td>
+          <td>10</td>
+          <td>0</td>
+          <td>8</td>
+          <td>-0.187</td>
+      </tr>
+      </tbody>
     </table>
 
     <h2 class="text-center mt-5 mb-4">IPL 2024 - Schedule & Predictions </h2>
