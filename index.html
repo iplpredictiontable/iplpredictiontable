@@ -17,7 +17,8 @@
       background-color: #19398a;
     }
     .tn-link {
-      color: #002992;
+      /* color: #002992; */
+      color: white;
       margin-left: 4px;
     }
     h2 {
@@ -31,7 +32,7 @@
       display: none;
     }
     .qualified-teams-border-line {
-      border-bottom: 1.5px dashed #002992 !important;
+      border-bottom: 2px dashed white !important;
     }
     @media only screen and (max-width: 768px) {
       .web-show {
@@ -40,9 +41,57 @@
       .mobile-show {
         display: block;
       }
+      .points-table > tbody > tr > td:nth-child(1) {
+        display: flex;
+        align-items: center;
+        font-size: 0.75rem !important;
+      }
+    }
+    .table{
+      --bs-table-bg: none;
+    }
+    .points-table > tbody > tr > td {
+      color: white !important
+    }
+    .points-table > thead > tr > th {
+      color: white !important;
+    }
+    .points-table > thead > tr {
+      background-color: black !important;
+    }
+
+    .rr-bg {
+      background-color: #ef9abb;
+    }
+    .kkr-bg {
+      background-color: #623d9c;
+    }
+    .csk-bg {
+      background-color: #ebb61a;
+    }
+    .srh-bg {
+      background-color: #f17223;
+    }
+    .lsg-bg {
+      background-color: #3d589b;
+    }
+    .gt-bg {
+      background-color: #0e4b80;
+    }
+    .mi-bg {
+      background-color: #0a5991 ;
+    }
+    .dc-bg {
+      background-color: #2c2cae;
+    }
+    .rcb-bg {
+      background-color: #ec2a33;
+    }
+    .pbks-bg {
+      background-color: #0a5991;
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8859533398267765" crossorigin="anonymous"></script>
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8859533398267765" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -52,21 +101,49 @@
     </div>
 
     <h2 class="text-center mb-4">RCB Predication Table to Qualify for Playoffs - IPL 2024</h2>
-    <p class="text-center last-updated">Last Updated: May 3rd 08:36AM</p>
-    <table class="table table-bordered">
+    <p class="text-center last-updated">Last Updated: May 4rd 10:29AM</p>
+    <table class="table points-table">
       <thead>
         <tr>
           <th scope="col">Team</th>
-          <th scope="col">Matches</th>
-          <th scope="col">Won</th>
-          <th scope="col">Lost</th>
+          <th scope="col">
+            <span class="web-show">
+              Matches
+            </span>
+            <span class="mobile-show">
+              M
+            </span>
+          </th>
+          <th scope="col">
+            <span class="web-show">
+              Won
+            </span>
+            <span class="mobile-show">
+              W
+            </span>
+          </th>
+          <th scope="col">
+            <span class="web-show">
+              Lost
+            </span>
+            <span class="mobile-show">
+              L
+            </span>
+          </th>
           <th scope="col">NR</th>
-          <th scope="col">Points</th>
+          <th scope="col">
+            <span class="web-show">
+              Points
+            </span>
+            <span class="mobile-show">
+              P
+            </span>
+          </th>
           <th scope="col">NRR</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="rr-bg">
           <td>
               <img width="24" src="./assets/images/RR.png" />
               <span class="web-show tn-link">Rajasthan Royals</span>
@@ -81,7 +158,7 @@
       </tr>
   
 
-      <tr>
+      <tr class="srh-bg">
           <td>
               <img width="24" src="./assets/images/SRH.png" />
               <span class="web-show tn-link">Sunrisers Hyderabad</span>
@@ -96,22 +173,21 @@
       </tr>
   
 
-      <tr>
+      <tr class="kkr-bg">
           <td>
               <img width="24" src="./assets/images/KKR.png" />
               <span class="web-show tn-link">Kolkata Knight Riders</span>
               <span class="mobile-show tn-link">KKR</span>
           </td>
           <td>14</td>
-          <td>7</td>
-          <td>7</td>
+          <td>8</td>
+          <td>6</td>
           <td>0</td>
-          <td><b>14</b></td>
-          <td>1.096</td>
+          <td><b>16</b></td>
+          <td>1.098</td>
       </tr>
-  
-      
-      <tr class="qualified-teams-border-line">
+
+      <tr class="qualified-teams-border-line rcb-bg">
         <td>
             <img width="24" src="./assets/images/RCB.png" />
             <span class="web-show tn-link">Royal Challengers Bengaluru</span>
@@ -123,10 +199,10 @@
         <td>0</td>
         <td><b>14</b></td>
         <td>0.1</td>
-    </tr>
+      </tr>
+  
 
-
-      <tr>
+      <tr class="lsg-bg">
           <td>
               <img width="24" src="./assets/images/LSG.png" />
               <span class="web-show tn-link">Lucknow Super Giants</span>
@@ -140,24 +216,9 @@
           <td>0.094</td>
       </tr>
   
-
-
-      <tr>
-          <td>
-              <img width="24" src="./assets/images/MI.png" />
-              <span class="web-show tn-link">Mumbai Indians</span>
-              <span class="mobile-show tn-link">MI</span>
-          </td>
-          <td>14</td>
-          <td>6</td>
-          <td>8</td>
-          <td>0</td>
-          <td><b>12</b></td>
-          <td>-0.272</td>
-      </tr>
   
 
-      <tr>
+      <tr class="dc-bg">
           <td>
               <img width="24" src="./assets/images/DC.png" />
               <span class="web-show tn-link">Delhi Capitals</span>
@@ -172,7 +233,7 @@
       </tr>
   
 
-      <tr>
+      <tr class="gt-bg">
           <td>
               <img width="24" src="./assets/images/GT.png" />
               <span class="web-show tn-link">Gujarat Titans</span>
@@ -187,7 +248,7 @@
       </tr>
   
 
-      <tr>
+      <tr class="csk-bg">
           <td>
               <img width="24" src="./assets/images/CSK.png" />
               <span class="web-show tn-link">Chennai Super Kings</span>
@@ -202,7 +263,7 @@
       </tr>
   
 
-      <tr>
+      <tr class="pbks-bg">
           <td>
               <img width="24" src="./assets/images/PBKS.png" />
               <span class="web-show tn-link">Punjab Kings</span>
@@ -214,6 +275,21 @@
           <td>0</td>
           <td><b>10</b></td>
           <td>-0.062</td>
+      </tr>
+  
+
+      <tr class="mi-bg">
+          <td>
+              <img width="24" src="./assets/images/MI.png" />
+              <span class="web-show tn-link">Mumbai Indians</span>
+              <span class="mobile-show tn-link">MI</span>
+          </td>
+          <td>14</td>
+          <td>5</td>
+          <td>9</td>
+          <td>0</td>
+          <td><b>10</b></td>
+          <td>-0.356</td>
       </tr>
   
       </tbody>
@@ -230,15 +306,7 @@
       </thead>
      
       <tbody>
-
-      <tr>
-          <td>May 3</td>
-          <td>Mumbai Indians vs Kolkata Knight Riders</td>
-          <td><span class="s-won">Mumbai Indians</span> Need To Win </td>
-      </tr>
-  
-
-      <tr>
+        <tr>
           <td>May 4</td>
           <td>Royal Challengers Bengaluru vs Gujarat Titans</td>
           <td><span class="s-won">Royal Challengers Bengaluru</span> Need To Win </td>
@@ -369,9 +437,6 @@
           <td>Rajasthan Royals vs Kolkata Knight Riders</td>
           <td><span class="s-won">Rajasthan Royals</span> Need To Win </td>
       </tr>
-  
-
-     
   
       </tbody>
     </table>
