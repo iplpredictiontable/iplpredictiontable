@@ -100,13 +100,13 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8859533398267765" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="updatePageTitle()">
   <div class="container mt-3">
     <div class="text-center mb-4">
       <img class="logo" src="ipl-logo-new-old.png" alt="IPL Logo" style="width: 100px;">
     </div>
 
-    <h2 class="text-center mb-4">RCB Predication Table to Qualify for Playoffs - IPL 2024</h2>
+    <h2 class="text-center mb-4" id="pageTitle">RCB Predication Table to Qualify for Playoffs - IPL 2024</h2>
     <table class="table points-table">
       <thead>
         <tr>
@@ -471,6 +471,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-RMYZ57NX63');
+</script>
+<script>
+  function updatePageTitle() {
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const myParam = urlParams.get('titleUpdate');
+      if (myParam) {
+        document.getElementById('pageTitle').innerHTML = 'RCB Prediction Table'
+      }
+    } catch (err) {}
+  }
 </script>
 </body>
 </html>
